@@ -21,7 +21,7 @@ jobs:
           name: Trigger build test1
           command: |
             curl -H 'content-type: application/json' --data '{'run_workflow_build': 'true'} \
-            }' -X https://circleci.com/api/v2/project/gh/sangcaovn/test1/pipeline
+            }' -X POST https://circleci.com/api/v2/project/gh/sangcaovn/test1/pipeline
           # command: curl --request POST \ 
           #   --url https://circleci.com/api/v2/project/gh/sangcaovn/test1/pipeline \
           #   --header 'Circle-Token: 4f57b4ec040063836249245f3e51b599fee94d75' \
