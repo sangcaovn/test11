@@ -21,8 +21,7 @@ jobs:
           name: Trigger build test1
           command: |
             curl -X POST --header 'content-type: application/json' \
-            -header 'Circle-Token: 4f57b4ec040063836249245f3e51b599fee94d75' \
-            -d '{'run_workflow_build': true}' \
+            --header 'Circle-Token: 4f57b4ec040063836249245f3e51b599fee94d75' \
             https://circleci.com/api/v2/project/gh/sangcaovn/test1/pipeline
 
 # Invoke jobs via workflows
